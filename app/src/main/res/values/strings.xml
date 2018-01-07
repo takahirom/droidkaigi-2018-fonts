@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">font-samples</string>
+    <string name="title_activity_platform_font">PlatformFontActivity</string>
+</resources>
