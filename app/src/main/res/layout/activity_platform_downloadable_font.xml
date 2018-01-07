@@ -20,6 +20,7 @@
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
         />
     <TextView
         android:id="@+id/text2"
@@ -27,11 +28,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/alegreya_italic"
-        android:text="test text Specify font resource xml default"
+        android:fontFamily="@font/alegreya_regular"
+        android:text="test text Specify font resource downloadable"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text1"
+        android:layout_marginLeft="16dp"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -39,9 +41,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/orbitron"
-        android:textStyle="bold"
-        android:text="test text Specify font resource xml bold"
+        android:fontFamily="@font/alegreya_italic"
+        android:textStyle="italic"
+        android:text="test text Specify font resource downloadable"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text2"

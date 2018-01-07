@@ -27,13 +27,13 @@
             />
         <activity android:name=".PlatformDownloadableFontActivity" />
         <activity android:name=".SupportLibraryFontActivity" />
+        <activity android:name=".SupportLibraryDownloadableFontActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts"
             />
 
-        <activity android:name=".SupportLibraryDownloadableFontActivity"></activity>
     </application>
 
 </manifest>
