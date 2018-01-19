@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
-        <item>@font/alegreya_italic</item>
         <item>@font/alegreya_regular</item>
+        <item>@font/alegreya_italic</item>
         <item>@font/asset</item>
         <item>@font/butcherman</item>
         <item>@font/orbitron_regular</item>

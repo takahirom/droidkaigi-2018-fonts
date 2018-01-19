@@ -26,9 +26,16 @@ class MainActivity : AppCompatActivity() {
             add(SampleItem("Support Library Downloadable Font") {
                 SupportLibraryDownloadableFontActivity.start(this@MainActivity)
             })
-            add(SampleItem("Font list") {
-                FontFetchActivity.start(this@MainActivity)
+            add(SampleItem("Font request with ResourcesCompat") {
+                FontRequestWithResourcesCompatActivity.start(this@MainActivity)
             })
+            add(SampleItem("Font request") {
+                FontRequestActivity.start(this@MainActivity)
+            })
+            add(SampleItem("Font access via ContentProvider") {
+                FontFetchContentProviderActivity.start(this@MainActivity)
+            })
+
             setOnItemClickListener { item, _ ->
                 (item as SampleItem).clickListener()
             }
