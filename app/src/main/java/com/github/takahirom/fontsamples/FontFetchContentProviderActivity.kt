@@ -21,14 +21,18 @@ class FontFetchContentProviderActivity : AppCompatActivity() {
         val uri = Uri.Builder().scheme(ContentResolver.SCHEME_CONTENT)
                 .authority("com.google.android.gms.fonts")
                 .build()
-
         val fileBaseUri = Uri.Builder().scheme(ContentResolver.SCHEME_CONTENT)
                 .authority("com.google.android.gms.fonts")
                 .appendPath("file")
                 .build()
 
-        var cursor = contentResolver.query(uri, arrayOf<String>(FontsContractCompat.Columns._ID, FontsContractCompat.Columns.FILE_ID, FontsContractCompat.Columns.TTC_INDEX, FontsContractCompat.Columns.VARIATION_SETTINGS, FontsContractCompat.Columns.WEIGHT, FontsContractCompat.Columns.ITALIC, FontsContractCompat.Columns.RESULT_CODE),
-                "query = ?", arrayOf("Asset"), null)
+        var cursor = contentResolver.query(
+                uri,
+                arrayOf<String>(FontsContractCompat.Columns._ID, FontsContractCompat.Columns.FILE_ID, FontsContractCompat.Columns.TTC_INDEX, FontsContractCompat.Columns.VARIATION_SETTINGS, FontsContractCompat.Columns.WEIGHT, FontsContractCompat.Columns.ITALIC, FontsContractCompat.Columns.RESULT_CODE),
+                "query = ?",
+                arrayOf("Days One"),
+                null
+        )
 
         val result = mutableListOf<FontsContractCompat.FontInfo>()
         if (cursor != null && cursor.count > 0) {
