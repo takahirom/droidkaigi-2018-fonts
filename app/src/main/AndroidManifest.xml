@@ -7,6 +7,7 @@
     <uses-sdk tools:overrideLibrary="com.xwray.groupie,com.xwray.groupie.kotlinandroidextensions" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -36,7 +37,9 @@
             />
 
         <activity android:name=".FontRequestActivity" />
-        <activity android:name=".FontRequestWithResourcesCompatActivity"></activity>
+        <activity android:name=".FontRequestWithResourcesCompatActivity" />
+        <activity android:name=".EmojiActivity" />
+        <activity android:name=".TextViewPlaygroundActivity"></activity>
     </application>
 
 </manifest>

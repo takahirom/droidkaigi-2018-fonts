@@ -35,6 +35,13 @@ class MainActivity : AppCompatActivity() {
             add(SampleItem("Font access via ContentProvider") {
                 FontFetchContentProviderActivity.start(this@MainActivity)
             })
+            add(SampleItem("Emoji") {
+                EmojiActivity.start(this@MainActivity)
+            })
+            add(SampleItem("TextView Playground") {
+                TextViewPlaygroundActivity.start(this@MainActivity)
+            })
+
 
             setOnItemClickListener { item, _ ->
                 (item as SampleItem).clickListener()
